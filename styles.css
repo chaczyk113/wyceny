@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    height: 100vh;
+    background-image: url("./img/tlo1.jpg");
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header-info { 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 5%;
+}
+
+.header-name {
+    width: 65%;
+    border-right: 4px solid rgb(36, 36, 36);
+}
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 4.95vw;
+    text-align: right;
+    color: rgb(36, 36, 36);
+    width: 95%;
+    margin-right: 5%;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    /* border: 1px solid red; */
+    /* text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000; */
+}
+
+h1 span {
+    font-family: 'Merienda', cursive;
+}
+
+header h2 {
+    font-family: 'Merienda', cursive;
+    width: 45%;
+    color: rgb(54, 54, 54);
+    font-size: 2vw;
+    margin-left: 2.5%;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-align: left;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.55);
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    overflow: hidden;
+     
+}
+
+nav a:visited, nav a:link {
+    display: block;
+    /* height: 90px; */
+    /* width: 200px; */
+    padding: 0 2.5vw;
+    margin: 1vw 0;
+    border: none;
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+    /* border: 1px solid red; */
+    border-right: 4px solid black;
+    text-align: center;
+    /* margin: 50px; */
+    font-size: 2vw;
+    font-family: 'Merienda', cursive;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+nav a:hover {
+    text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.75);
+}
+
+h2 {
+    font-family: 'Merienda', cursive;
+    color: #000;
+    font-size: 3.3vh;
+    text-align: center;
+    margin: 2vh 0;
+}
+
+p {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 2.2vh;
+    text-align: justify;
+}
+
+.wrapper {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wrapper p {
+    /* display: inline; */
+    width: 100%;
+}
+
+#portret {
+    width: 180px;
+    height: 260px;
+}
