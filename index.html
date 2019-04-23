@@ -13,10 +13,11 @@
     <link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
 
-    <script src="./scripts.js"></script>
 
 </head>
 
@@ -38,35 +39,74 @@
     </header>
     <section id="o-mnie">
         <h2>O mnie</h2>
-        <div class="wrapper">
+        <div class="wrapper flex">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <!-- <div class="icon"><img src="./img/ikona.png" alt=""></div>1 -->
             <p>
-                Posiadam uprawnienia zawodowe w zakresie wyceny nieruchomości. Jestem członkiem Stowarzyszenia
-                Rzeczoznawców
-                Majątkowych Województwa Wielkopolskiego. Do każdego zlecenia podchodzę indywidualnie, gwarantuję
-                uczciwość,
-                solidność i rzetelność wykonywanej pracy.
+                Posiadam uprawnienia zawodowe w zakresie wyceny nieruchomości. Jestem członkiem Stowarzyszenia Rzeczoznawców Majątkowych Województwa Wielkopolskiego. Do każdego zlecenia podchodzę indywidualnie, gwarantuję uczciwość, solidność i rzetelność wykonywanej pracy.
             </p>
         </div>
     </section>
-    <section id="oferta">
+    <section id="oferta" class="full-color">
         <h2>Oferta</h2>
-        <p>
-            Głównym profilem firmy jest szeroko rozumiana wycena nieruchomości. Zapewniamy terminowe
-            i profesjonale wykonanie operatów szacunkowych. Wyceniamy nieruchomości zabudowane
-            i niezabudowane dla różnych celów i potrzeb. Ostateczny koszt wykonanej usługi zależy od rodzaju zlecenia,
-            terminu jego wykonania oraz koniecznego nakładu pracy. Naszą ofertę kierujemy zarówno do osób fizycznych,
-            przedsiębiorstw oraz urzędów. Działamy na terenie woj. wielkopolskiego, lubuskiego i kujawsko-pomorskiego.
-            Współpracujemy także z Radcami Prawnymi.
-            Serdecznie zapraszamy do nawiązania współpracy.
+        <div class="wrapper">
+            <p>
+                Głównym profilem firmy jest szeroko rozumiana wycena nieruchomości. Zapewniamy terminowe i profesjonale wykonanie operatów szacunkowych. Wyceniamy nieruchomości zabudowane i niezabudowane dla różnych celów i potrzeb. Ostateczny koszt wykonanej usługi zależy od rodzaju zlecenia, terminu jego wykonania oraz koniecznego nakładu pracy. Naszą ofertę kierujemy zarówno do osób fizycznych, przedsiębiorstw oraz urzędów. Działamy na terenie woj. wielkopolskiego, lubuskiego i kujawsko-pomorskiego. Współpracujemy także z Radcami Prawnymi. Serdecznie zapraszamy do nawiązania współpracy.
+            </p>
+        </div>
 
-        </p>
     </section>
-    <section id="kontakt">
+    <section id="kontakt" class="wrapper">
         <h2>Kontakt</h2>
+        <article class="contact">
+            <div class="left">
+                <p>Prosimy kontatkować się bezpośrednio za pomocą podanych danych teleadresowych lub za
+                    pośrednictwem dostępnego na stronie formularza.</p>
+                <p>Po wcześniejszym uzgodnieniu telefonicznym możliwe spotkanie w jednej z podanych lokalizacji.</p>
+                <h3>Lokalizacje</h3>
+                <address>
+                    ul. Woźna 9/1, 61-777 Poznań<br>
+                    ul. Sądowa 9/1, 88-300 Mogilno<br>
+                    ul. Szeroka 5/10, 88-100 Inowrocław
+                </address>
+                <h3>Adres korespondencyjny</h3>
+                <address>
+                    <strong>Wycena nieruchomości Urszula Grzegolec</strong> <br>
+                    ul. Winiarska 56D/35<br>
+                    60-654 Poznań <br>
+                    telefon: 661 497 118 <br>
+                    e-mail: <a href="mailto:dawid.gawrysiak@dgprawo.pl">dawid.gawrysiak@dgprawo.pl</a>
+                </address>
+            </div>
+            <form class="form" action="https://mailthis.to/dawid.gawrysiak@dgprawo.pl" method="POST">
+                <h3>Zostaw wiadomość</h3>
+                <label for="_replyto">E-mail</label>
+                <input id="email" name="_replyto" type="email" placeholder="adres@email.com" required>
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="600123123" pattern="[0-9]{9}">
+                <label for="message">Treść</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Zadaj pytanie..."></textarea>
+                <button type="submit" name="submit" value="Send" id="submit">Wyślij</button>
+                <input type="hidden" name="_subject" value="Pytanie ze strony WWW">
+                <input type="hidden" name="_after" value="http://dgprawo.pl">
+                <input type="hidden" name="_honeypot" value="">
+                <input type="hidden" name="_confirmation" value="">
+            </form>
+        </article>
     </section>
+    <div class="map-wrapper">
+        <iframe width="100%" height="350px" frameBorder="0" allowfullscreen
+            src="https://umap.openstreetmap.fr/pl/map/kancelaria-radcy-prawnego-dawid-gawrysiak_305424?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false#8/52.698/18.094"></iframe>
+    </div>
+
     <footer>
+        <p>Wycena nieruchomości Urszula Grzegolec urszula.grzegolec@gmail.com +48607613617</p>
+        <p class="author">&copy; <a href="mailto:jakzacha@gmail.com">JZ</a> 2019</p>
 
     </footer>
+
+    
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
