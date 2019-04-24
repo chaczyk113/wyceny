@@ -13,4 +13,6 @@ window.onload = () => {
             el.innerHTML = textReplace;
         });
     })();
+
+    AOS.init();
 }
