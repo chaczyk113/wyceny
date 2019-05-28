@@ -400,4 +400,10 @@ h3 {
   nav a:link {
     font-size: 3.5vw;
   }
+  .wrapper {
+      width: 95%;
+  }
+  .about-list, p {
+    font-size: 16px;
+  }
 }

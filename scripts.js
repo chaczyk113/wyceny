@@ -1,6 +1,6 @@
 window.onload = () => {
     var unbrakeConjuctions = (function () {
-        var elements = document.querySelectorAll('p');
+        var elements = document.querySelectorAll('p, li');
         Array.prototype.forEach.call(elements, function (el, i) {
             var textReplace = el.innerHTML;
             var lettersToReplace = ["a", "i", "o", "u", "w", "z", "A", "I", "O", "U", "W", "Z"];
