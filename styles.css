@@ -125,6 +125,7 @@ p {
   margin: 0 auto;
   font-size: 18px;
   text-align: justify;
+  line-height: 1.4;
 }
 
 .about-list {
@@ -345,7 +346,7 @@ h3 {
     flex-flow: column;
   }
   #domek {
-      order: -1;
+    order: -1;
   }
   .contact {
     -webkit-box-orient: vertical;
@@ -394,16 +395,47 @@ h3 {
     font-size: 4.5vw;
   }
   nav {
-    bottom: 20%;
+    bottom: 15%;
   }
   nav a:visited,
   nav a:link {
     font-size: 3.5vw;
   }
   .wrapper {
-      width: 95%;
+    width: 95%;
   }
-  .about-list, p {
+  .about-list,
+  p {
     font-size: 16px;
   }
+  p {
+    /* text-justify: distribute;
+    text-align-last: left; */
+    /* text-align:center; */
+    /* word-spacing:-1px; */
+    text-justify: inter-word;
+  }
+  footer p {
+      text-align: center;
+      display: block;
+  }
+  .author {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .wrapper p {
+    text-indent: 0;
+    text-align: center;
+  }
+  nav {
+    bottom: 12%;
+  }
+}
+
+@media only screen and (max-height: 560px) {
+    nav {
+        bottom: 8%;
+      }
 }
