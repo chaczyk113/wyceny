@@ -458,4 +458,8 @@ h3 {
   header h2 {
     font-size: 5vh;
   }
+
+  h2 {
+    font-size: 7vh;
+  }
 }
