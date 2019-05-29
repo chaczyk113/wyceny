@@ -395,7 +395,7 @@ h3 {
     font-size: 4.5vw;
   }
   nav {
-    bottom: 15%;
+    bottom: 10vh;
   }
   nav a:visited,
   nav a:link {
@@ -438,4 +438,24 @@ h3 {
     nav {
         bottom: 8%;
       }
+}
+
+@media only screen and (max-width: 960px) and (orientation: landscape)  {
+  nav li {
+    display: inline-block;
+  }
+  .header-info {
+    margin-top: 5%;
+  }
+  h1 {
+    font-size: 9vh;
+  }
+
+  h1 span {
+    font-size: 8vh;
+  }
+
+  header h2 {
+    font-size: 5vh;
+  }
 }
