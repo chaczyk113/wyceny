@@ -13,10 +13,7 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./img/tlo1-comp.jpg");
   background-position: center center;
   background-size: cover;
@@ -25,23 +22,21 @@ header {
 
 .header-rectangle {
   width: 80%;
-  height: 0;
-  padding-top: 40%;
+  min-height: calc(100vh - 2 * 6vmax);
+  margin: 6vmax auto;
   position: relative;
   background-color: #e9e1db9d;
   outline: 3px solid black;
   outline-offset: -20px;
+  overflow: hidden;
 }
 
 .header-info {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  margin-top: 5%;
+  margin-top: 3vmax;
 }
 
 .header-name {
@@ -56,7 +51,7 @@ h1 {
   text-align: right;
   color: rgb(50, 50, 50);
   width: 95%;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 }
 
 h1 span {
@@ -80,14 +75,17 @@ header a {
 }
 
 nav {
-  position: absolute;
-  left: 0;
-  bottom: 15%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.55);
-  /* margin-top: 8%; */
   display: flex;
   justify-content: center;
+  margin: 5vmax 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav li {
@@ -103,7 +101,6 @@ nav a:link {
   border: none;
   color: rgb(50, 50, 50);
   text-decoration: none;
-  /* border-right: 4px solid rgb(50, 50, 50); */
   text-align: center;
   font-size: 2vw;
   font-family: "Roboto Slab", serif;
@@ -114,7 +111,7 @@ nav a:link {
 h2 {
   font-family: "Roboto Slab", serif;
   color: rgb(50, 50, 50);
-  font-size: 3.3vh;
+  font-size: 30px;
   text-align: center;
   margin: 2vh 0;
   width: 100%;
@@ -290,49 +287,47 @@ h3 {
 }
 
 @media only screen and (max-width: 1200px) {
-  .header-rectangle {
-    width: 90%;
-    height: 0;
-    padding-top: 50%;
-  }
 }
 
 @media only screen and (max-width: 960px) {
-  .header-rectangle {
-    width: 90%;
-    height: 80%;
-    padding-top: 0;
-  }
   .header-info {
     flex-flow: column;
+    padding-right: 6%;
   }
   .header-name {
     width: 100%;
     border-right: none;
-    margin-bottom: 30px;
   }
   h1 {
+    width: 100%;
     font-size: 6vw;
-    width: 85%;
-    margin: 0 auto;
+    /* margin: 10px auto; */
     padding: 0;
+    margin: 0;
   }
 
   h1 span {
+    display: inline-block;
     font-size: 5.2vw;
     font-weight: 600;
     padding-bottom: 15px;
-    border-bottom: 3px solid rgb(50, 50, 50);
+    border-bottom: 2px solid rgb(0, 0, 0);
   }
 
   header h2 {
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    width: 85%;
     font-size: 3.5vw;
     text-align: right;
-    margin: 0 auto;
+    margin: 0;
+    padding-top: 10px;
   }
+
+  nav ul {
+    flex-flow: column;
+  }
+
   nav li {
     display: block;
   }
@@ -379,6 +374,7 @@ h3 {
 @media only screen and (max-width: 650px) {
   .header-info {
     margin-top: 15%;
+    padding-right: 8%;
   }
   .header-rectangle {
     width: 90%;
@@ -425,19 +421,17 @@ h3 {
 }
 
 @media only screen and (max-width: 360px) {
+  .header-info {
+    padding-right: 12%;
+  }
   .wrapper p {
     text-indent: 0;
     text-align: center;
   }
-  nav {
-    bottom: 12%;
-  }
 }
 
 @media only screen and (max-height: 560px) {
-    nav {
-        bottom: 8%;
-      }
+
 }
 
 @media only screen and (max-width: 960px) and (orientation: landscape)  {

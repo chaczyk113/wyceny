@@ -15,4 +15,25 @@ window.onload = () => {
     })();
 
     AOS.init();
+
+    // Navbar location
+    setNavbar();
+}
+
+window.addEventListener('resize', function (event) {
+    setNavbar();
+});
+
+var setNavbar = function () {
+    var headerRectangle = document.querySelector('.header-rectangle');
+    var headerInfo = document.querySelector('.header-info');
+    var navBar = document.querySelector('nav');
+
+    navBar.style.margin = '5vmax 0';
+    var headerInfoMarginTop = window.getComputedStyle(headerInfo).getPropertyValue("margin-top").replace('px', '');
+    var headerRectangleOutlineOffset = Math.abs(window.getComputedStyle(headerRectangle).getPropertyValue("outline-offset").replace('px', ''));
+    var navBarPos = ((headerRectangle.clientHeight - headerInfo.clientHeight - headerInfoMarginTop) - navBar.clientHeight) / 2;
+
+    navBar.style.margin = '0 0';
+    navBar.style.margin = `${navBarPos}px 0 ${navBarPos + headerRectangleOutlineOffset}px 0`;
 }
